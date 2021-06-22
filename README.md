@@ -13,3 +13,5 @@ instalar dependencias
 
    para dar start no app:
      comando: SET DEBUG=myapp:* & npm start
+
+servidor local disponivel em : http://localhost:3000/ 
