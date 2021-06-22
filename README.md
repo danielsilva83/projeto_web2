@@ -1,10 +1,15 @@
 # projeto_web2
+Instrução para desenvolvedores:
 
-change directory:
-     > cd myapp
+criar pasta para o projeto:
+     comando: md myapp
+entrar na pasta do projeto
+     cd myapp
 
-   install dependencies:
-     > npm install
+instalar nodejs - instação pode ser encontrada em: https://nodejs.org/en/
 
-   run the app:
-     > SET DEBUG=myapp:* & npm start
+instalar dependencias
+     comando: npm install
+
+   para dar start no app:
+     comando: SET DEBUG=myapp:* & npm start
