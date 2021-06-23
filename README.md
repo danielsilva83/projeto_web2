@@ -21,3 +21,6 @@ instalar dependencias
      comando: SET DEBUG=myapp:* & npm start
 
 servidor local disponivel em : http://localhost:3000/ 
+
+Para maiores detalhes pode-se consultar a documentação encontrada:
+https://expressjs.com/pt-br/starter/generator.html
