@@ -1,4 +1,4 @@
-# projeto_web2
+# projeto_web2 - Aplicativo Tem Razão -  aplicação para reforçar exercicios de fração 
 Instrução para desenvolvedores:
 
 passo 1 instalar nodejs - instação pode ser encontrada em: https://nodejs.org/en/
