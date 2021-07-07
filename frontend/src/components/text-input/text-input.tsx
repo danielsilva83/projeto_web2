@@ -11,7 +11,8 @@ interface InputProps {
   children?: React.ReactNode;
   onChange: any;
   placeholder?: string;
-  type: 'text' | 'password';
+  type: 'text' | 'password'
+  ;
 }
 
 const TextInput: React.FC<InputProps> = ({
@@ -38,6 +39,7 @@ const TextInput: React.FC<InputProps> = ({
           <Icon.FaEye size="35" color="#B0B0B0" />
         </ButtonEye>
       ) : null}
+      
     </Container>
   );
 };
