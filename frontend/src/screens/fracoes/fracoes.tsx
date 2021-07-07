@@ -7,11 +7,9 @@ import {
   Text,
   BoxText,
 
-} from './sobre-styles';
+} from './fracoes-styles';
 import Markdown from '../../components/markdown/markdown';
 
-import equipe from '../../assets/texto-equipe.md';
-import ferramentas from '../../assets/texto-ferramentas.md';
 import conteudo from '../../assets/texto-conteudo.md';
 
 const Sobre: React.FC = () => {
@@ -21,15 +19,12 @@ const Sobre: React.FC = () => {
         <div>
         <Logo/></div>
         
-        <BoxText>
-        <Markdown path = {ferramentas}/>
-      </BoxText>
     </LeftSquare>
 
       <RightSquare>
       <div>
         <Text>
-        <Markdown path = {equipe}/>
+          <Markdown path = {conteudo}/>
       </Text>
       </div>
 
