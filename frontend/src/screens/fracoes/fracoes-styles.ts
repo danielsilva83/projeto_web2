@@ -20,7 +20,9 @@ display: flex;
 flex-direction: column;
 background-color: #6a2673;
 width: 20vw;
-height: 100vh;
+height: 1000%;
+margin-top: 441%;
+padding: 15px;
 border-right-width:thin;
 border-right-style:solid;
 border-right-color:black;
@@ -28,6 +30,7 @@ border-right-color:black;
 @media (max-width: 800px) {
   width: 100%;
   height: 50vh;
+  margin-top: 0;
 }
 `;
 

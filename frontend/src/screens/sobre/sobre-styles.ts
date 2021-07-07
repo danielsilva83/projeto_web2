@@ -20,12 +20,13 @@ display: flex;
 flex-direction: column;
 background-color: #6a2673;
 width: 20vw;
-height: 100vh;
+height: 200%;
+margin-top: 50%;
 padding: 15px;
 
 @media (max-width: 800px) {
   width: 100%;
-  height: 50vh;
+  margin-top: 0;
 }
 `;
 

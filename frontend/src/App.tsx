@@ -6,7 +6,7 @@ import Fracoes from './screens/fracoes/fracoes';
 import Contato from './screens/contato/contato';
 
 function App() {
-  return <Contato/>;
+  return <Fracoes/>;
 }
 
 export default App;
