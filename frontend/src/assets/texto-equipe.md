@@ -35,35 +35,3 @@ A ferramenta “Tem Razão” foi desenvolvida como projeto da disciplina de Pro
 * Como permitir com que os professores possam acompanhar a evolução dos seus alunos?
 
 A partir destas questões o projeto consiste no desenvolvimento de uma aplicação web com os objetivos de ser uma ferramenta educativa para alunos entre 6 e 14 anos e acompanhamento e controle de aprendizado para professores sobre um tema livre da disciplina de matemática. O assunto escolhido foi “Operações Básicas com Frações”.
-
-
-## Ferramentas
-
-Para o desenvolvimento do projeto foram usados as seguintes ferramentas:
-
-
-### Repositórios
-
-
-
-* Github (repositório de código)
-* Google Drive (repositório de documento)
-
-
-### Ferramentas de Desenvolvimento
-
-
-
-* Html, css e Javascript (Linguagens frontend)
-* Node.js (Ambiente de Execução)
-* Express (principal Framework)
-* Markdown (Linguagem de Marcação de texto)
-
-
-### Ferramentas externas
-
-
-
-* Trello (Gerenciador de tarefas e atividades)
-* Whatsapp e google meet (Meio de comunicação e reuniões)
-* Corel Draw, Canvas, Illustrator, AdobeXD (Ferramentas Gráficas)

@@ -21,7 +21,9 @@ flex-direction: column;
 background-color: #6a2673;
 width: 20vw;
 height: 100vh;
-padding: 15px;
+border-right-width:thin;
+border-right-style:solid;
+border-right-color:black;
 
 @media (max-width: 800px) {
   width: 100%;
@@ -62,7 +64,10 @@ export const Logo = styled(LogoTemRazao)<LogoProps>`
 export const BoxText = styled.h4`
 font-size: 20px;
 font-weight: normal;
-color: white;
+color: #6a2673;
+border-right-width:thin;
+border-right-style:double;
+border-right-color:black;
 `;
 export const Text = styled.h3`
   font-size: 25px;
