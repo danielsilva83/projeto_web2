@@ -1,6 +1,8 @@
 
 # Frações
 
+
+
 # O que são frações
 
 Pode se dizer que existem diversas formas de definir frações, que variam de acordo com a necessidade didática do público alvo, as principais definições:
@@ -22,17 +24,19 @@ Quando repartimos um pedaço de objeto, nós estamos o dividindo. Após a retira
 
 
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
-![alt_text](images/image1.png "image_tooltip")
-
+$$
+\frac{1 \rightarrow Numerador}{8 \rightarrow Denominador }
+$$
 
 Agora para lermos uma fração podemos fazer de duas formas, a primeira forma basta ler o valor do numerador “sobre” o valor do denominador, na fração acima por exemplo lemos: **um** sobre **oito**. Da segunda forma o numerador é lido normalmente enquanto os denominadores são lidos da seguinte forma: quando estes são 2, 3, 4, 5, 6, 7, 8, 9, 10 e múltiplos de 10 utilizamos a nomenclatura de números ordinais, usando o mesmo exemplo é correto dizer: **um oitavo**, e quando os denominadores são maiores que 10 e diferente de múltiplos de 10, se lê o número normalmente e em seguida a palavra “avos”, ou seja, caso uma família de quatro pessoas coma 2 ovos cada um de uma caixa de 12 dizemos que **oito doze avos** da caixa foi consumida e representamos essa fração assim: 
 
 
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+$$
+\frac{8}{12}
+$$
 
 
 
@@ -43,7 +47,10 @@ Em uma divisão simples normalmente é representada das seguintes formas: 5÷3, 
 
 
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+$$
+\frac{5}{3}
+$$
+
 
 
 
@@ -52,23 +59,11 @@ Em uma divisão simples normalmente é representada das seguintes formas: 5÷3, 
 
 Os números racionais são **uma ampliação do conjunto dos números inteiros**, contendo também as frações, ou seja, **são todos os números que podem ser escritos na forma de fração**. Representamos o conjunto dos números racionais com símbolo **ℚ e** seus elementos da seguinte forma:
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+$$
+\mathbb{Q} = {\frac{a}{b}}|a \in \mathbb{Z}, e\ b \in \mathbb{Z}^*
+$$
 
-
-
- 
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
-
-
-O que essa represen
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-tação diz é que um número é racional se ele puder ser representado como a fração **_a_ sobre _b_**, tal que **_a_** é um número inteiro e **_b_** é um número inteiro diferente de zero. 
+O que essa representação diz é que um número é racional se ele puder ser representado como a fração **_a_ sobre _b_**, tal que **_a_** é um número inteiro e **_b_** é um número inteiro diferente de zero. 
 
 Resumindo, os representantes desse conjunto são os seguintes:
 
@@ -76,56 +71,37 @@ Resumindo, os representantes desse conjunto são os seguintes:
 
 * Qualquer número **inteiro** exemplos: 5 = 
 
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+$$
+5=\frac{5}{1},0=\frac{0}{1},-123=\frac{-1235}{1}
+$$
 
-, 0 = 
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-, -123 = 
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-;
 * Qualquer número **decimal finito** exemplo: 2,6 = 
 
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+$$
+2,6=\frac{13}{5},00,15=\frac{15}{100}
+$$
 
-; 0,15 = 
-
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-;
 * Qualquer **dízima periódica** exemplo: 10,434343... = 
 
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+$$
+10,434343...=\frac{1033}{99},0,028888..=\frac{26}{900}
+$$
 
-; 0,028888... = 
-
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-;
-
-**Não **são números racionais:
+**Não** são números racionais:
 
 
 
 * As **dízimas não periódicas**, por exemplo: 4,1239489201…;
 * As **raízes** **não exatas**, por exemplo: 
 
-<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
-;
+$$
+\sqrt{2}
+$$
 * A **raiz quadrada de números negativos**, por exemplo: 
 
-<p id="gdcalert15" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.png "image_tooltip")
-.
-
+$$
+\sqrt{-25}
+$$
 
 # Frações equivalentes
 
@@ -133,30 +109,19 @@ Frações equivalentes são aquelas que representam o **mesmo número**. Isso si
 
 
 
-<p id="gdcalert16" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert17">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+$$
+\frac{4}{2}=\frac{8}{4}
+$$
+
+
+Para o processo de verificação entre duas ou mais frações a fim de determinar se elas são ou não equivalentes, basta **multiplicar ou dividir** o **numerador e o denominador** por um número diferente de 0. Então para verificarmos se as frações 1/2 e 4/8 são  equivalentes podemos fazer assim:
 
 
 
-Para o processo de verificação entre duas ou mais frações a fim de determinar se elas são ou não equivalentes, basta **multiplicar ou dividir** o **numerador e o denominador** por um número diferente de 0. Então para verificarmos se as frações 
-
-<p id="gdcalert17" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert18">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-e
-
-<p id="gdcalert18" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert19">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
- são  equivalentes podemos fazer assim:
-
-
-
-<p id="gdcalert19" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert20">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-
-
-
-<p id="gdcalert20" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert21">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
+$$
+\frac{1.4}{2.4}=\frac{4}{8}
+\frac{4:4}{8:4}=\frac{1}{2}
+$$
 
 
 
@@ -167,55 +132,37 @@ Esse processo de dividir o numerador e o denominador pelo mesmo número, como mo
 
 # Operações com frações
 
-Como as frações são as principais representantes dos números racionais, elas possuem as operações de **adição**, **subtração**, **multiplicação **e **divisão **muito bem definidas.
+Como as frações são as principais representantes dos números racionais, elas possuem as operações de **adição**, **subtração**, **multiplicação** e **divisão** muito bem definidas.
 
 
 ## Adição (Soma)
 
 Para realizar a adição de duas ou mais frações que possuem denominadores iguais, apenas some o numerador, conforme o exemplo abaixo:
 
-
-
-<p id="gdcalert21" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert22">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
+$$
+\frac{5}{4}+\frac{3}{4}=\frac{5+3}{4}=\frac{8}{4}
+$$
 
 Se as frações possuem denominadores diferentes, é necessário encontrar **frações equivalentes** a elas que possuam denominadores iguais para depois somá-las. Neste processo nós utilizamos o cálculo de **MMC** que está explicado mais à frente neste artigo.
 
 Para exemplificar mais detalhadamente vamos usar a seguinte equação:
 
 
-
-<p id="gdcalert22" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert23">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-
+$$
+\frac{2}{4}+\frac{10}{12}+\frac{2}{50}
+$$
 
 
-1. **Passo**: Realizar o **mínimo múltiplo comum (MMC) **dos denominadores de todas as frações envolvidas na expressão numérica;
 
-<p style="text-align: right">
-4, 12, 50| 2</p>
+1. **Passo**: Realizar o **mínimo múltiplo comum (MMC)** dos denominadores de todas as frações envolvidas na expressão numérica;
 
 
-<p style="text-align: right">
-2, 6, 25| 2</p>
-
-
-<p style="text-align: right">
-1, 3, 25| 3</p>
-
-
-<p style="text-align: right">
-1, 1, 25| 5</p>
-
-
-<p style="text-align: right">
-1, 1, 5| 5</p>
-
-
-<p style="text-align: right">
-   1, 1, 1| 300</p>
+$$4, 12, 50| 2$$
+$$2, 6, 25| 2$$
+$$1, 3, 25| 3$$
+$$1, 1, 25| 5$$
+$$1, 1, 5| 5$$
+$$1, 1, 1| 300$$
 
 
 
@@ -224,85 +171,77 @@ Para exemplificar mais detalhadamente vamos usar a seguinte equação:
 
 
 
-<p id="gdcalert23" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert24">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
+$$
+\frac{2}{4}+\frac{10}{12}+\frac{2}{50}=\frac{}{300}+\frac{}{300}+\frac{}{300}
+$$
 
 
 
 3. **Passo**: Dividir o **MMC** pelo denominador de uma fração;
 
     
-
-<p id="gdcalert24" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert25">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
+$$
+\frac{300}{4}=75
+$$
 
 
 4. **Passo**:Multiplicar o resultado pelo numerador da mesma fração do passo 3
 
     
-
-<p id="gdcalert25" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert26">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
+    
+$$
+75*2=150
+$$
 
 5. **Passo**: Definir o resultado do passo 4 como numerador da mesma fração dos passos 3 e 4
 
 
 
-<p id="gdcalert26" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert27">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
+$$
+\frac{2}{4}+\frac{10}{12}+\frac{2}{50}=\frac{150}{300}+\frac{}{300}+\frac{}{300}
+$$
 
 
 
 
 6. **Passo**: Repetir a partir do passo 3 para cada fração da equação
 
+$$
+(\frac{300}{12})*10 = 25*10 = 250
+$$
+$$
+(\frac{300}{50})*2 = 6*2 = 12
+$$
 
-
-<p id="gdcalert27" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert28">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-
-
-
-<p id="gdcalert28" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert29">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-
-
-
-<p id="gdcalert29" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert30">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
+$$
+\frac{2}{4}+\frac{10}{12}+\frac{2}{50}=\frac{150}{300}+\frac{250}{300}+\frac{12}{300}
+$$
 
 
 
 7. **Passo**: Realizar Adição dos numeradores
 
 
-
-<p id="gdcalert30" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert31">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
+$$
+\frac{150}{300}+\frac{250}{300}+\frac{12}{300}=\frac{150+250+12}{300}=\frac{412}{300}
+$$
 
 
 Dessa maneira, podemos escrever o seguinte:
 
 
-
-<p id="gdcalert31" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert32">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
+$$
+\frac{2}{4}+\frac{10}{12}+\frac{2}{50}=\frac{412}{300}
+$$
 
 
 ## Subtração
 
 O processo de subtração de fração é igual ao de **adição**, apenas mudando o operador. Equações com denominadores iguais são realizadas de maneira simples como:
 
-
-
-<p id="gdcalert32" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert33">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
+$$
+\frac{5}{4}-\frac{3}{4}=\frac{5-3}{4}=\frac{2}{4}
+$$
 
 
 Enquanto equações com denominadores diferentes passam pelo mesmo passo a passo mostrado em adição mudando apenas o **passo 7** no qual agora é realizada uma **subtração**.
@@ -318,49 +257,34 @@ O cálculo de **MMC** está relacionado com múltiplos de um número natural. En
 
 Dizemos que 30 é múltiplo de 5, pois 5·6 = 30. Existe um número natural que multiplicado por 5 resulta em 30. Veja mais alguns números e seus múltiplos:
 
-M(3) = 0, 3, 6, 9, 12, 15, 18, 21, …
+$$M(3) = 0, 3, 6, 9, 12, 15, 18, 21, …$$
 
-M(4) = 0, 4, 8, 12, 16, 20, 24, 28, 32, …
+$$M(4) = 0, 4, 8, 12, 16, 20, 24, 28, 32, …$$
 
 **O mínimo múltiplo comum** entre dois números é representado pelo menor valor comum pertencente aos múltiplos dos números. Observe o MMC entre os números 20 e 30:
 
-M(20) = 0, 20, 40, 60, 80, 100, 120, ....
+$$M(20) = 0, 20, 40, 60, 80, 100, 120, ....$$
 
-M(30) = 0, 30, 60, 90, 120, 150, 180, …
+$$M(30) = 0, 30, 60, 90, 120, 150, 180, …$$
 
 O MMC entre 20 e 30 é equivalente a 60.
 
 Outra forma de determinar o MMC entre 20 e 30 é por meio da **fatoração**, em que devemos escolher os fatores comuns e não comuns de maior expoente. Observe:
 
-20 = 2·2·5 = 2²·5
+$$20 = 2·2·5 = 2²·5$$
 
-30 = 2·3·5 = 2·3·5
+$$30 = 2·3·5 = 2·3·5$$
 
-MMC (20, 30) = 2²·3·5 = 60
+$$MMC (20, 30) = 2²·3·5 = 60$$
 
 A terceira opção consiste em realizar a **decomposição simultânea** dos números, multiplicando os fatores obtidos. Observe:
 
-<p style="text-align: right">
-20, 30| 2</p>
-
-
-<p style="text-align: right">
-10, 15| 2</p>
-
-
-<p style="text-align: right">
-5, 15| 3</p>
-
-
-<p style="text-align: right">
-5, 5| 5</p>
-
-
-<p style="text-align: right">
-1, 1|</p>
-
-
-MMC(20,30) = 2·2·3·5 = 60
+$$20, 30| 2$$
+$$10, 15| 2$$
+$$5, 15| 3$$
+$$5, 5| 5$$
+$$1, 1|$$
+$$MMC(20,30) = 2·2·3·5 = 60$$
 
 
 ## Multiplicação
@@ -369,17 +293,16 @@ Para multiplicar duas ou mais frações, devemos multiplicar os numeradores de t
 
 
 
-<p id="gdcalert33" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert34">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
+$$
+\frac{3}{4}.\frac{8}{9}=\frac{3.8}{4.9}=\frac{24}{36}
+$$
 
 
 Quando for multiplicar uma fração com um número inteiro **basta fazer a multiplicação do inteiro com o numerador**, pois como vimos anteriormente um número inteiro pode ser representado como uma fração com denominador 1, veja:
 
-
-
-<p id="gdcalert34" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert35">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
+$$
+\frac{7}{4}.5=\frac{7}{4}.\frac{5}{1}=\frac{35}{4}
+$$
 
 
 ## Divisão
@@ -387,57 +310,54 @@ Quando for multiplicar uma fração com um número inteiro **basta fazer a multi
 Na operação de divisão de frações, devemos conservar a primeira fração, ou seja, manter a primeira fração, e multiplicar pelo inverso da segunda. Para determinar o inverso de uma fração, basta trocar o numerador pelo denominador. Assim:
 
 
-
-<p id="gdcalert35" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert36">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-
-
+$$
+\frac{2}{4}:\frac{3}{9}=\frac{2}{4}.\frac{9}{3}=\frac{2.9}{4.3}=\frac{18}{12}
+$$
 ## Potenciação ou radiciação de fração
 
 Para calcular a potência ou raiz de uma fração, **basta calcular separadamente** a potência ou a raiz do numerador e depois do denominador.
 
 
+$$
+(\frac{2}{7})^2=\frac{2^2}{7^2}=\frac{4}{14}
+$$
 
-<p id="gdcalert36" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert37">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-
-
-
-<p id="gdcalert37" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert38">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
+$$
+\sqrt{\frac{4}{9}}=\frac{\sqrt{4}}{\sqrt{9}}=\frac{2}{3}
+$$
 
 
 # Metodologia
 
 Aqui nesta ferramenta, Tem Razão, os exercícios se baseiam na prática apresentada no trabalho “INOVANDO O ENSINO DE FRAÇÕES COM O USO DAS PEÇAS LEGO” publicado no VII Encontro de iniciação a docência da Universidade Estadual da Paraíba, que consiste resumidamente em utilizar de blocos de montagem tipo Lego como representação das frações. Vamos utilizar de 5 diferentes blocos para isso, estes são: 
 
-**bloco 1**- composto por 8 pinos, que representa o número inteiro 1.
+**bloco 1**- composto por 8 pinos, que representa o número inteiro 
+$$1$$
 
 **bloco 2**- composto por 4 pinos, que representa um meio 
-
-<p id="gdcalert38" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert39">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-; 
-
-**bloco 3**- composto por 2 pinos,  que representa um meio 
-
-<p id="gdcalert39" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert40">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+$$
+\frac{1}{2}
+$$
 
 
+**bloco 3**- composto por 2 pinos,  que representa um quarto 
 
-**bloco 4**- composto por 6 pinos,  que representa um meio 
-
-<p id="gdcalert40" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert41">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-
-**bloco 5**- composto por 1 pino,  que representa um meio 
-
-<p id="gdcalert41" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert42">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+$$
+\frac{1}{4}
+$$
 
 
+**bloco 4**- composto por 6 pinos,  que representa tres quartos 
+
+$$
+\frac{3}{4}
+$$
+
+
+**bloco 5**- composto por 1 pino,  que representa um oitavo 
+
+$$
+\frac{1}{8}
+$$
 
 Nesse formato, os exercícios serão apresentados junto com as alternativas o qual apenas uma está correta, então prepare papel e lápis, preste bastante atenção e mão na massa!
