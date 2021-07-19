@@ -27,14 +27,14 @@ describe('JwtStrategy', () => {
   describe('validate', () => {
     it('should validates and returns the user based on JWT payload', async () => {
       const user = new User();
-      user.email = 'dev.lab@kognita.ai';
+      user.email = 'dev.lab@temrazao.com';
 
       userRepository.findOne.mockResolvedValue(user);
       const result = await jwtStrategy.validate({
-        email: 'dev.lab@kognita.ai',
+        email: 'dev.lab@temrazao.com',
       });
       expect(userRepository.findOne).toHaveBeenCalledWith({
-        email: 'dev.lab@kognita.ai',
+        email: 'dev.lab@temrazao.com',
       });
       expect(result).toEqual(user);
     });
@@ -42,7 +42,7 @@ describe('JwtStrategy', () => {
     it('should throws an unauthorized exception as user cannot be found', () => {
       userRepository.findOne.mockResolvedValue(null);
       expect(
-        jwtStrategy.validate({ email: 'dev.lab@kognita.ai' }),
+        jwtStrategy.validate({ email: 'dev.lab@temrazao.com' }),
       ).rejects.toThrow(UnauthorizedException);
     });
   });

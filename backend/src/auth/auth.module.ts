@@ -41,11 +41,11 @@ export class AuthModule {}
     "iss": "TemRazao",
     "iat": 1623716684,
     "exp": 1655252688,
-    "aud": "https://kognita.ai",
-    "sub": "dev.lab@kognita.ai",
-    "FirstName": "Iago",
-    "LastName": "Braga",
-    "Email": "iago.calazans@kognita.ai",
+    "aud": "https://temrazao.com",
+    "sub": "dev.lab@temrazao.com",
+    "FirstName": "Daniel",
+    "LastName": "Silva",
+    "Email": "danielsilva.2013@alunos.utfpr.edu.br",
     "Role": "Manager"
 }
  * 
