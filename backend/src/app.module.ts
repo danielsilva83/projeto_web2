@@ -1,7 +1,12 @@
 import { Module, NestModule, MiddlewareConsumer } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { UsersModule } from './users/users.module';
+import { ClientsModule } from './clients/clients.module';
+import { PermissionsModule } from './permissions/permissions.module';
 import { Connection, getConnectionOptions } from 'typeorm';
 import { ConfigModule } from '@nestjs/config';
+import { AuthModule } from './auth/auth.module';
+
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -13,7 +18,10 @@ import { ConfigModule } from '@nestjs/config';
           autoLoadEntities: true,
         }),
     }),
-   
+    AuthModule,
+    UsersModule,
+    ClientsModule,
+    PermissionsModule,
   ],
 })
 export class AppModule implements NestModule {

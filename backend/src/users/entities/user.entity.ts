@@ -12,8 +12,7 @@ import { Role } from '../../permissions/entities/role.entity';
 import { Client } from '../../clients/entities/client.entity';
 // @ts-ignore
 import * as bcrypt from 'bcrypt';
-import { Ticket } from '../../tickets/entities/ticket.entity';
-import { TicketComment } from '../../tickets/entities/ticket-comment.entity';
+
 
 @Entity('users')
 @Unique(['email'])
@@ -73,14 +72,6 @@ export class User {
   @JoinColumn({ name: 'client_id', referencedColumnName: 'id' })
   clientEager: Client;
 
-  @OneToMany(() => Ticket, (ticket) => ticket.user)
-  tickets: Ticket[];
-
-  @OneToMany(() => Ticket, (ticket) => ticket.operator)
-  ticketOperator: Ticket[];
-
-  @OneToMany(() => TicketComment, (ticketComment) => ticketComment.user)
-  comments: TicketComment[];
 
   @BeforeInsert()
   async hashPassword(): Promise<void> {

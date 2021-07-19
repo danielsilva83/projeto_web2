@@ -13,7 +13,7 @@ export class MailService {
 
   async sendForgotPassword(user: User, token: string) {
     const url = `${this.configService.get(
-      'GEOEDGE_FRONT_URL',
+      'TEMRAZAO_FRONT_URL',
     )}/auth/new-password?token=${token}`;
 
     try {
@@ -33,7 +33,7 @@ export class MailService {
   }
 
   async sendPasswordUpdated(user: User) {
-    const url = `${this.configService.get('GEOEDGE_FRONT_URL')}/auth/login`;
+    const url = `${this.configService.get('TEMRAZAO_FRONT_URL')}/auth/login`;
 
     try {
       await this.mailerService.sendMail({
