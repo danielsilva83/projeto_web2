@@ -38,7 +38,7 @@ export class AuthModule {}
  * ! JWT Token
  * 
  * Claim Set: {
-    "iss": "Kognita",
+    "iss": "TemRazao",
     "iat": 1623716684,
     "exp": 1655252688,
     "aud": "https://kognita.ai",

@@ -11,8 +11,8 @@ import { join } from 'path';
       useFactory: async (config: ConfigService) => ({
         transport: config.get('MAIL_TRANSPORT'),
         defaults: {
-          sender: '"Equipe Kognita (GeoEdge)" <admin@kognita.ai>',
-          from: '"Equipe Kognita (GeoEdge)" <admin@kognita.ai>',
+          sender: '"Equipe TemRazao (TemRazao)" <danielsilva.2013@alunos.utfpr.edu.br>',
+          from: '"Equipe TemRazao (TemRazao)" <danielsilva.2013@alunos.utfpr.edu.br>',
         },
         template: {
           dir: join(__dirname, 'templates'),

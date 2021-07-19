@@ -19,7 +19,7 @@ export class MailService {
     try {
       await this.mailerService.sendMail({
         to: user.email,
-        subject: 'Solicitação de Redefinir sua senha - GeoEdge',
+        subject: 'Solicitação de Redefinir sua senha - TemRazao',
         template: './forgot-password.template.hbs',
         context: {
           // ✏️ filling template brackets with context
@@ -38,7 +38,7 @@ export class MailService {
     try {
       await this.mailerService.sendMail({
         to: user.email,
-        subject: 'Sua senha foi alterada - GeoEdge',
+        subject: 'Sua senha foi alterada - TemRazao',
         template: './updated-password.template.hbs',
         context: {
           // ✏️ filling template brackets with context
