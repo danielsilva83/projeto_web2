@@ -1,5 +1,6 @@
 {
     "conventionalCommits.scopes": [
-        "permissions"
+        "permissions",
+        "dump_banco_dados"
     ]
 }
