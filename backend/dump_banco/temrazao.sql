@@ -76,32 +76,6 @@ INSERT INTO `permissions` VALUES (1,'manage','{}','all',1),(2,'read','{\"profess
 UNLOCK TABLES;
 
 --
--- Table structure for table `professors`
---
-
-DROP TABLE IF EXISTS `professors`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `professors` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `professor_name` varchar(255) NOT NULL,
-  `is_active` tinyint NOT NULL DEFAULT '1',
-  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `professors`
---
-
-LOCK TABLES `professors` WRITE;
-/*!40000 ALTER TABLE `professors` DISABLE KEYS */;
-/*!40000 ALTER TABLE `professors` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `roles`
 --
 
@@ -208,4 +182,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-07-23  1:50:56
+-- Dump completed on 2021-07-23 11:13:54
