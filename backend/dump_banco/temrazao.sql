@@ -152,7 +152,7 @@ CREATE TABLE `users` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `IDX_97672ac88f789774dd47f7c8be` (`email`),
   KEY `FK_a2cecd1a3531c0b041e29ba46e1` (`role_id`),
-  KEY `FK_acec766bc8dd08a6a6c88c61067` (`usuario_id`),
+  KEY `FK_acc68e3258e35d7f67fcd0f5f50` (`usuario_id`),
   CONSTRAINT `FK_a2cecd1a3531c0b041e29ba46e1` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`),
   CONSTRAINT `FK_acc68e3258e35d7f67fcd0f5f50` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
@@ -194,6 +194,10 @@ LOCK TABLES `usuarios` WRITE;
 INSERT INTO `usuarios` VALUES (1,1,'2021-06-28 18:19:28','2021-06-28 18:19:28','Daniel');
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Dumping events for database 'temrazao'
+--
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -204,4 +208,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-07-23  1:29:31
+-- Dump completed on 2021-07-23  1:50:56
