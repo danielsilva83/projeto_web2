@@ -7,11 +7,11 @@ import {
 import { Brackets, EntityRepository, Repository } from 'typeorm';
 import { RegisterAccountDto } from '../dto/register-accout.dto';
 import { UpdateAccountDto } from '../dto/update-account.dto';
-import { Usuario } from './usuario.entity';
+import { Professor } from './professor.entity';
 
-@EntityRepository(Usuario)
-export class ProfessorRepository extends Repository<Usuario> {
-  async createAndSave(data: RegisterAccountDto): Promise<Usuario> {
+@EntityRepository(Professor)
+export class ProfessorRepository extends Repository<Professor> {
+  async createAndSave(data: RegisterAccountDto): Promise<Professor> {
     const clientEntity = this.create(data);
 
     try {
@@ -27,31 +27,31 @@ export class ProfessorRepository extends Repository<Usuario> {
     }
   }
 
-  async compareAndUpdate(usuario: Usuario, data: UpdateAccountDto) {
+  async compareAndUpdate(professor: Professor, data: UpdateAccountDto) {
     if (!data) {
       throw new ForbiddenException(
         'Não foram definidos campos para serem atualizados.',
       );
     }
 
-    if (!usuario) {
-      throw new ForbiddenException('Usuario inválido!');
+    if (!professor) {
+      throw new ForbiddenException('Professor inválido!');
     }
 
   }
 
   async getAllClients(name: string, date: string, status: number) {
-    const query = this.createQueryBuilder('usuario').select([
-      'usuario.id',
-      'usuario.professorName',
-      'usuario.createdAt',
-      'usuario.isActive',
+    const query = this.createQueryBuilder('professor').select([
+      'professor.id',
+      'professor.professorName',
+      'professor.createdAt',
+      'professor.isActive',
     ]);
 
     if (name) {
       query.andWhere(
         new Brackets((qb) => {
-          qb.where('usuario.professorName LIKE :name', {
+          qb.where('professor.professorName LIKE :name', {
             name: `%${name}%`,
           });
         }),
@@ -61,7 +61,7 @@ export class ProfessorRepository extends Repository<Usuario> {
     if (date) {
       query.andWhere(
         new Brackets((qb) => {
-          qb.where('usuario.createdAt LIKE :date', {
+          qb.where('professor.createdAt LIKE :date', {
             date: `%${date}%`,
           });
         }),
@@ -71,7 +71,7 @@ export class ProfessorRepository extends Repository<Usuario> {
     if (status) {
       query.andWhere(
         new Brackets((qb) => {
-          qb.where('usuario.isActive = :status', {
+          qb.where('professor.isActive = :status', {
             status: status,
           });
         }),

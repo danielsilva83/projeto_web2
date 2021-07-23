@@ -3,7 +3,7 @@ import { IsOptional, IsString, Length, MaxLength } from 'class-validator';
 
 export class UpdateAccountDto {
   @ApiProperty({
-    description: 'Nome do usuario.',
+    description: 'Nome do professor.',
   })
   @ApiPropertyOptional()
   @IsString()

@@ -2,7 +2,7 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectConnection } from '@nestjs/typeorm';
 import { RegisterAccountDto } from './dto/register-accout.dto';
 import { Connection } from 'typeorm';
-import { ProfessorRepository } from './entities/usuario.repository';
+import { ProfessorRepository } from './entities/professor.repository';
 import { User } from '../users/entities/user.entity';
 import { CaslAbilityFactory } from '../auth/casl-ability.factory';
 import { ForbiddenException } from '@nestjs/common';
@@ -77,20 +77,20 @@ export class ProfessorService {
   async register(data: RegisterAccountDto) {
  
 
-    const usuario = await this.clientsRepository.createAndSave(data);
+    const professor = await this.clientsRepository.createAndSave(data);
 
     const userData = {
       firstName: data.firstName,
       lastName: data.lastName,
       email: data.email,
       password: data.password,
-      professorEager: usuario,
+      professorEager: professor,
     };
 
     const newUser = this.userRepository.create(userData);
     await this.userRepository.save(newUser);
 
-    return usuario;
+    return professor;
   }
 
   private forbiddenMessage = () => {

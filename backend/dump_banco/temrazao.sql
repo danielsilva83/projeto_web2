@@ -39,7 +39,7 @@ CREATE TABLE `modules` (
 
 LOCK TABLES `modules` WRITE;
 /*!40000 ALTER TABLE `modules` DISABLE KEYS */;
-INSERT INTO `modules` VALUES (1,'Usuario','[NULL]'),(2,'User','[NULL]'),(6,'all','[NULL]'),(8,'ClientAddress','[NULL]');
+INSERT INTO `modules` VALUES (1,'Professor','[NULL]'),(2,'User','[NULL]'),(6,'all','[NULL]'),(8,'ClientAddress','[NULL]');
 /*!40000 ALTER TABLE `modules` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -71,7 +71,7 @@ CREATE TABLE `permissions` (
 
 LOCK TABLES `permissions` WRITE;
 /*!40000 ALTER TABLE `permissions` DISABLE KEYS */;
-INSERT INTO `permissions` VALUES (1,'manage','{}','all',1),(2,'read','{\"professorEager.id\": \"{user.professorEager.id}\"}','User',2),(3,'update','{\"professorEager.id\": \"{user.professorEager.id}\"}','User',2),(4,'create','{\"professorEager.id\": \"{user.professorEager.id}\"}','User',2),(5,'delete','{\"professorEager.id\": \"{user.professorEager.id}\"}','User',2),(14,'read','{\"id\": \"{user.professorEager.id}\"}','Usuario',2),(15,'update','{\"id\": \"{user.professorEager.id}\"}','Usuario',2),(17,'read','{\"usuario.id\": \"{user.professorEager.id}\"}','ClientAddress',2),(18,'create','{\"usuario.id\": \"{user.professorEager.id}\"}','ClientAddress',2),(19,'update','{\"usuario.id\": \"{user.professorEager.id}\"}','ClientAddress',2),(20,'delete','{\"usuario.id\": \"{user.professorEager.id}\"}','ClientAddress',2);
+INSERT INTO `permissions` VALUES (1,'manage','{}','all',1),(2,'read','{\"professorEager.id\": \"{user.professorEager.id}\"}','User',2),(3,'update','{\"professorEager.id\": \"{user.professorEager.id}\"}','User',2),(4,'create','{\"professorEager.id\": \"{user.professorEager.id}\"}','User',2),(5,'delete','{\"professorEager.id\": \"{user.professorEager.id}\"}','User',2),(14,'read','{\"id\": \"{user.professorEager.id}\"}','Professor',2),(15,'update','{\"id\": \"{user.professorEager.id}\"}','Professor',2),(17,'read','{\"professor.id\": \"{user.professorEager.id}\"}','ClientAddress',2),(18,'create','{\"professor.id\": \"{user.professorEager.id}\"}','ClientAddress',2),(19,'update','{\"professor.id\": \"{user.professorEager.id}\"}','ClientAddress',2),(20,'delete','{\"professor.id\": \"{user.professorEager.id}\"}','ClientAddress',2);
 /*!40000 ALTER TABLE `permissions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -128,7 +128,7 @@ CREATE TABLE `users` (
   KEY `FK_a2cecd1a3531c0b041e29ba46e1` (`role_id`),
   KEY `FK_acc68e3258e35d7f67fcd0f5f50` (`usuario_id`),
   CONSTRAINT `FK_a2cecd1a3531c0b041e29ba46e1` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`),
-  CONSTRAINT `FK_acc68e3258e35d7f67fcd0f5f50` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`)
+  CONSTRAINT `FK_acc68e3258e35d7f67fcd0f5f50` FOREIGN KEY (`usuario_id`) REFERENCES `professors` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -143,13 +143,13 @@ INSERT INTO `users` VALUES (3,'Admin','User',1,1,'danielsilva.2013@alunos.utfpr.
 UNLOCK TABLES;
 
 --
--- Table structure for table `usuarios`
+-- Table structure for table `professors`
 --
 
-DROP TABLE IF EXISTS `usuarios`;
+DROP TABLE IF EXISTS `professors`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `usuarios` (
+CREATE TABLE `professors` (
   `id` int NOT NULL AUTO_INCREMENT,
   `is_active` tinyint NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -160,13 +160,13 @@ CREATE TABLE `usuarios` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `usuarios`
+-- Dumping data for table `professors`
 --
 
-LOCK TABLES `usuarios` WRITE;
-/*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (1,1,'2021-06-28 18:19:28','2021-06-28 18:19:28','Daniel');
-/*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
+LOCK TABLES `professors` WRITE;
+/*!40000 ALTER TABLE `professors` DISABLE KEYS */;
+INSERT INTO `professors` VALUES (1,1,'2021-06-28 18:19:28','2021-06-28 18:19:28','Daniel');
+/*!40000 ALTER TABLE `professors` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
