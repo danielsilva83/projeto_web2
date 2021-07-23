@@ -3,13 +3,13 @@ import { IsOptional, IsString, Length, MaxLength } from 'class-validator';
 
 export class UpdateAccountDto {
   @ApiProperty({
-    description: 'Nome do responsável pela empresa.',
+    description: 'Nome do professor.',
   })
   @ApiPropertyOptional()
   @IsString()
   @MaxLength(80)
   @IsOptional()
-  personInCharge: string;
+  professorName: string;
 
   @ApiPropertyOptional({ maxLength: 11, minLength: 11 })
   @IsOptional()

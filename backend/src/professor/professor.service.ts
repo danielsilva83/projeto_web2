@@ -2,22 +2,19 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectConnection } from '@nestjs/typeorm';
 import { RegisterAccountDto } from './dto/register-accout.dto';
 import { Connection } from 'typeorm';
-import { ClientAddressesRepository } from './entities/client-address.repository';
-import { ClientsRepository } from './entities/clients.repository';
+import { ProfessorRepository } from './entities/professor.repository';
 import { User } from '../users/entities/user.entity';
 import { CaslAbilityFactory } from '../auth/casl-ability.factory';
 import { ForbiddenException } from '@nestjs/common';
 import { UpdateAccountDto } from './dto/update-account.dto';
-import { UpdateAccountAddressDto } from './dto/update-account-address.dto';
 import { UserRepository } from '../users/entities/user.repository';
 
 @Injectable()
-export class ClientsService {
+export class ProfessorService {
   constructor(
     @InjectConnection()
     private connection: Connection,
-    private clientsRepository: ClientsRepository,
-    private clientAddressesRepository: ClientAddressesRepository,
+    private clientsRepository: ProfessorRepository,
     private userRepository: UserRepository,
     private caslAbilityFactory: CaslAbilityFactory,
   ) {}
@@ -48,9 +45,7 @@ export class ClientsService {
   async findById(user: User, id: number) {
     const abilities = await this.caslAbilityFactory.getUserPermissions(user);
 
-    const requiredClient = await this.clientsRepository.findOne(id, {
-      relations: ['addresses'],
-    });
+    const requiredClient = await this.clientsRepository.findOne(id);
     if (abilities.can('read', requiredClient)) {
       return requiredClient;
     }
@@ -78,61 +73,24 @@ export class ClientsService {
     return this.forbiddenMessage();
   }
 
-  async updateAddressById(
-    user: User,
-    id: number,
-    data: UpdateAccountAddressDto,
-  ) {
-    const abilities = await this.caslAbilityFactory.getUserPermissions(user);
-
-    const requiredClientAddress = await this.clientAddressesRepository.findOne(
-      id,
-      { relations: ['client'] },
-    );
-    if (abilities.can('update', requiredClientAddress)) {
-      try {
-        return await this.clientAddressesRepository.compareAndUpdate(
-          requiredClientAddress,
-          id,
-          data,
-        );
-      } catch (err) {
-        return err;
-      }
-    }
-
-    return this.forbiddenMessage();
-  }
 
   async register(data: RegisterAccountDto) {
-    const { addresses } = data;
-    delete data.addresses;
+ 
 
-    const client = await this.clientsRepository.createAndSave(data);
+    const professor = await this.clientsRepository.createAndSave(data);
 
     const userData = {
       firstName: data.firstName,
       lastName: data.lastName,
       email: data.email,
       password: data.password,
-      clientEager: client,
+      professorEager: professor,
     };
 
     const newUser = this.userRepository.create(userData);
     await this.userRepository.save(newUser);
 
-    await Promise.all([
-      addresses.map(
-        async (address) =>
-          await this.clientAddressesRepository.createAndSaveWithClient(
-            address,
-            client,
-          ),
-      ),
-      ,
-    ]);
-
-    return client;
+    return professor;
   }
 
   private forbiddenMessage = () => {

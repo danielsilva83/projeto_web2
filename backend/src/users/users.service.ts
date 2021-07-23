@@ -132,7 +132,7 @@ export class UsersService {
 
     if (abilities.can('create', 'User')) {
       return await this.usersRepository.find({
-        where: { clientEager: user.clientEager },
+        where: { professorEager: user.professorEager },
       });
     }
 

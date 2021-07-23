@@ -34,7 +34,7 @@ define(Permission, (faker: typeof Faker): Permission => {
   const actions = ['create', 'update', 'read', 'delete'];
   const permission = new Permission();
   permission.id = faker.datatype.number();
-  permission.conditions = { clientEager: { id: '{user.clientEager.id}' } };
+  permission.conditions = { professorEager: { id: '{user.professorEager.id}' } };
   permission.action = faker.random.arrayElement(actions);
   return permission;
 });

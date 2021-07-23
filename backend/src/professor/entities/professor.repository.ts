@@ -7,11 +7,11 @@ import {
 import { Brackets, EntityRepository, Repository } from 'typeorm';
 import { RegisterAccountDto } from '../dto/register-accout.dto';
 import { UpdateAccountDto } from '../dto/update-account.dto';
-import { Client } from './client.entity';
+import { Professor } from './professor.entity';
 
-@EntityRepository(Client)
-export class ClientsRepository extends Repository<Client> {
-  async createAndSave(data: RegisterAccountDto): Promise<Client> {
+@EntityRepository(Professor)
+export class ProfessorRepository extends Repository<Professor> {
+  async createAndSave(data: RegisterAccountDto): Promise<Professor> {
     const clientEntity = this.create(data);
 
     try {
@@ -27,47 +27,31 @@ export class ClientsRepository extends Repository<Client> {
     }
   }
 
-  async compareAndUpdate(client: Client, data: UpdateAccountDto) {
+  async compareAndUpdate(professor: Professor, data: UpdateAccountDto) {
     if (!data) {
       throw new ForbiddenException(
         'Não foram definidos campos para serem atualizados.',
       );
     }
 
-    if (!client) {
-      throw new ForbiddenException('Cliente inválido!');
+    if (!professor) {
+      throw new ForbiddenException('Professor inválido!');
     }
 
-    client.personInCharge &&= data.personInCharge;
-    client.personInChargeDocument &&= data.personInChargeDocument;
-
-    try {
-      await this.save(client);
-    } catch (err) {
-      if (err.code === 1406) {
-        throw new InternalServerErrorException(
-          'O campo personInChargeDocument precisa ser do tipo CPF, string e conter apenas números.',
-        );
-      }
-
-      throw new ServiceUnavailableException();
-    }
   }
 
   async getAllClients(name: string, date: string, status: number) {
-    const query = this.createQueryBuilder('clients').select([
-      'clients.id',
-      'clients.companyName',
-      'clients.createdAt',
-      'clients.isActive',
-      'clients.personInCharge',
-      'clients.personInChargeDocument',
+    const query = this.createQueryBuilder('professor').select([
+      'professor.id',
+      'professor.professorName',
+      'professor.createdAt',
+      'professor.isActive',
     ]);
 
     if (name) {
       query.andWhere(
         new Brackets((qb) => {
-          qb.where('clients.companyName LIKE :name', {
+          qb.where('professor.professorName LIKE :name', {
             name: `%${name}%`,
           });
         }),
@@ -77,7 +61,7 @@ export class ClientsRepository extends Repository<Client> {
     if (date) {
       query.andWhere(
         new Brackets((qb) => {
-          qb.where('clients.createdAt LIKE :date', {
+          qb.where('professor.createdAt LIKE :date', {
             date: `%${date}%`,
           });
         }),
@@ -87,7 +71,7 @@ export class ClientsRepository extends Repository<Client> {
     if (status) {
       query.andWhere(
         new Brackets((qb) => {
-          qb.where('clients.isActive = :status', {
+          qb.where('professor.isActive = :status', {
             status: status,
           });
         }),

@@ -27,24 +27,13 @@ export class RegisterAccountDto {
   @ApiPropertyOptional()
   lastName: string;
 
-  @ApiProperty({ required: true })
-  companyName: string;
 
   @ApiProperty({
     required: true,
-    type: RegisterAccountAddresInfo,
-    isArray: true,
+    description: 'Nome do professpr.',
   })
-  addresses: RegisterAccountAddresInfo[];
+  professorName: string;
 
-  @ApiProperty({
-    required: true,
-    description: 'Nome do responsável pela empresa.',
-  })
-  personInCharge: string;
-
-  @ApiProperty({ required: true })
-  personInChargeDocument: string;
 
   @ApiProperty({ required: true })
   @IsString({ message: 'O e-mail precisa ser do tipo texto.' })
