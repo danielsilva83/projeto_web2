@@ -5,17 +5,17 @@ import { AuthGuard } from '@nestjs/passport';
 import { ApiTags, ApiBearerAuth } from '@nestjs/swagger';
 import { GetUser } from '../auth/get-user.decorator';
 import { User } from '../users/entities/user.entity';
-import { ProfessorService } from './professor.service';
+import { ProfessorService } from './usuario.service';
 
 import { RegisterAccountDto } from './dto/register-accout.dto';
 import { UpdateAccountDto } from './dto/update-account.dto';
 
-@Controller('professor')
+@Controller('usuario')
 export class ProfessorController {
   constructor(public professorService: ProfessorService) {}
 
   @UseGuards(AuthGuard())
-  @ApiTags('professor')
+  @ApiTags('usuario')
   @ApiBearerAuth()
   @Get()
   async all(
@@ -28,7 +28,7 @@ export class ProfessorController {
   }
 
   @UseGuards(AuthGuard())
-  @ApiTags('professor')
+  @ApiTags('usuario')
   @ApiBearerAuth()
   @Get('find/:id')
   async findOne(@Param('id') id: number, @GetUser() user: User) {
@@ -36,7 +36,7 @@ export class ProfessorController {
   }
 
   @UseGuards(AuthGuard())
-  @ApiTags('professor')
+  @ApiTags('usuario')
   @ApiBearerAuth()
   @Put('update/:id')
   async updateOne(
@@ -49,7 +49,7 @@ export class ProfessorController {
 
 
   @Post('register')
-  @ApiTags('professor')
+  @ApiTags('usuario')
   async register(@Body() data: RegisterAccountDto) {
     return await this.professorService.register(data);
   }

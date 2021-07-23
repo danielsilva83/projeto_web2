@@ -9,7 +9,7 @@ import {
   BeforeInsert,
 } from 'typeorm';
 import { Role } from '../../permissions/entities/role.entity';
-import { Professor } from '../../professor/entities/professor.entity';
+import { Usuario } from '../../usuario/entities/usuario.entity';
 // @ts-ignore
 import * as bcrypt from 'bcrypt';
 
@@ -68,9 +68,9 @@ export class User {
   @JoinColumn({ name: 'role_id', referencedColumnName: 'id' })
   roleEager: Role;
 
-  @ManyToOne(() => Professor, (professor) => professor.users, { eager: true })
-  @JoinColumn({ name: 'professor_id', referencedColumnName: 'id' })
-  professorEager: Professor;
+  @ManyToOne(() => Usuario, (usuario) => usuario.users, { eager: true })
+  @JoinColumn({ name: 'usuario_id', referencedColumnName: 'id' })
+  professorEager: Usuario;
 
 
   @BeforeInsert()

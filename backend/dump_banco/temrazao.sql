@@ -39,7 +39,7 @@ CREATE TABLE `modules` (
 
 LOCK TABLES `modules` WRITE;
 /*!40000 ALTER TABLE `modules` DISABLE KEYS */;
-INSERT INTO `modules` VALUES (1,'Professor','[NULL]'),(2,'User','[NULL]'),(6,'all','[NULL]'),(8,'ClientAddress','[NULL]');
+INSERT INTO `modules` VALUES (1,'Usuario','[NULL]'),(2,'User','[NULL]'),(6,'all','[NULL]'),(8,'ClientAddress','[NULL]');
 /*!40000 ALTER TABLE `modules` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -71,7 +71,7 @@ CREATE TABLE `permissions` (
 
 LOCK TABLES `permissions` WRITE;
 /*!40000 ALTER TABLE `permissions` DISABLE KEYS */;
-INSERT INTO `permissions` VALUES (1,'manage','{}','all',1),(2,'read','{\"professorEager.id\": \"{user.professorEager.id}\"}','User',2),(3,'update','{\"professorEager.id\": \"{user.professorEager.id}\"}','User',2),(4,'create','{\"professorEager.id\": \"{user.professorEager.id}\"}','User',2),(5,'delete','{\"professorEager.id\": \"{user.professorEager.id}\"}','User',2),(14,'read','{\"id\": \"{user.professorEager.id}\"}','Professor',2),(15,'update','{\"id\": \"{user.professorEager.id}\"}','Professor',2),(17,'read','{\"professor.id\": \"{user.professorEager.id}\"}','ClientAddress',2),(18,'create','{\"professor.id\": \"{user.professorEager.id}\"}','ClientAddress',2),(19,'update','{\"professor.id\": \"{user.professorEager.id}\"}','ClientAddress',2),(20,'delete','{\"professor.id\": \"{user.professorEager.id}\"}','ClientAddress',2);
+INSERT INTO `permissions` VALUES (1,'manage','{}','all',1),(2,'read','{\"professorEager.id\": \"{user.professorEager.id}\"}','User',2),(3,'update','{\"professorEager.id\": \"{user.professorEager.id}\"}','User',2),(4,'create','{\"professorEager.id\": \"{user.professorEager.id}\"}','User',2),(5,'delete','{\"professorEager.id\": \"{user.professorEager.id}\"}','User',2),(14,'read','{\"id\": \"{user.professorEager.id}\"}','Usuario',2),(15,'update','{\"id\": \"{user.professorEager.id}\"}','Usuario',2),(17,'read','{\"usuario.id\": \"{user.professorEager.id}\"}','ClientAddress',2),(18,'create','{\"usuario.id\": \"{user.professorEager.id}\"}','ClientAddress',2),(19,'update','{\"usuario.id\": \"{user.professorEager.id}\"}','ClientAddress',2),(20,'delete','{\"usuario.id\": \"{user.professorEager.id}\"}','ClientAddress',2);
 /*!40000 ALTER TABLE `permissions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -84,12 +84,12 @@ DROP TABLE IF EXISTS `professors`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `professors` (
   `id` int NOT NULL AUTO_INCREMENT,
+  `professor_name` varchar(255) NOT NULL,
   `is_active` tinyint NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `professor_name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -98,7 +98,6 @@ CREATE TABLE `professors` (
 
 LOCK TABLES `professors` WRITE;
 /*!40000 ALTER TABLE `professors` DISABLE KEYS */;
-INSERT INTO `professors` VALUES (1,1,'2021-06-28 18:19:28','2021-06-28 18:19:28','');
 /*!40000 ALTER TABLE `professors` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -139,7 +138,7 @@ CREATE TABLE `users` (
   `first_name` varchar(255) NOT NULL,
   `last_name` varchar(255) NOT NULL,
   `role_id` int DEFAULT NULL,
-  `professor_id` int DEFAULT NULL,
+  `usuario_id` int DEFAULT NULL,
   `email` varchar(255) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -153,9 +152,9 @@ CREATE TABLE `users` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `IDX_97672ac88f789774dd47f7c8be` (`email`),
   KEY `FK_a2cecd1a3531c0b041e29ba46e1` (`role_id`),
-  KEY `FK_acec766bc8dd08a6a6c88c61067` (`professor_id`),
+  KEY `FK_acec766bc8dd08a6a6c88c61067` (`usuario_id`),
   CONSTRAINT `FK_a2cecd1a3531c0b041e29ba46e1` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`),
-  CONSTRAINT `FK_acec766bc8dd08a6a6c88c61067` FOREIGN KEY (`professor_id`) REFERENCES `professors` (`id`)
+  CONSTRAINT `FK_acc68e3258e35d7f67fcd0f5f50` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -168,6 +167,33 @@ LOCK TABLES `users` WRITE;
 INSERT INTO `users` VALUES (3,'Admin','User',1,1,'danielsilva.2013@alunos.utfpr.edu.br','2021-06-28 18:16:59','2021-06-28 18:16:59','2021-07-23 03:22:13',NULL,'$2b$08$lhT3ohnyTuM6O2kRQFogLuIFfp4eZNJyz.mu1EHO7imKJkNo92vF.',NULL,NULL,NULL,1);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `usuarios`
+--
+
+DROP TABLE IF EXISTS `usuarios`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `usuarios` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `is_active` tinyint NOT NULL DEFAULT '1',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `professor_name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `usuarios`
+--
+
+LOCK TABLES `usuarios` WRITE;
+/*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
+INSERT INTO `usuarios` VALUES (1,1,'2021-06-28 18:19:28','2021-06-28 18:19:28','Daniel');
+/*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -178,4 +204,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-07-23  0:38:49
+-- Dump completed on 2021-07-23  1:29:31

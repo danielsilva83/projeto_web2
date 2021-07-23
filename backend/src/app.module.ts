@@ -1,7 +1,7 @@
 import { Module, NestModule, MiddlewareConsumer } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsersModule } from './users/users.module';
-import { ProfessorModule } from './professor/professor.module';
+import { UsuarioModule } from './usuario/usuario.module';
 import { PermissionsModule } from './permissions/permissions.module';
 import { Connection, getConnectionOptions } from 'typeorm';
 import { ConfigModule } from '@nestjs/config';
@@ -20,7 +20,7 @@ import { AuthModule } from './auth/auth.module';
     }),
     AuthModule,
     UsersModule,
-    ProfessorModule,
+    UsuarioModule,
     PermissionsModule,
   ],
 })

@@ -27,7 +27,7 @@ Pretende adquirir e aprofundar conhecimentos técnicos principalmente em relaç�
 
 ## Contexto da Disciplina
 
-A ferramenta “Tem Razão” foi desenvolvida como projeto da disciplina de Programação Web 2 do curso de Engenharia de Software da Universidade Tecnológica Federal do Paraná (UTFPR). O desafio proposto pelo professor Dr. Adriano Rivolli da Silva são as seguintes questões:
+A ferramenta “Tem Razão” foi desenvolvida como projeto da disciplina de Programação Web 2 do curso de Engenharia de Software da Universidade Tecnológica Federal do Paraná (UTFPR). O desafio proposto pelo usuario Dr. Adriano Rivolli da Silva são as seguintes questões:
 
 
 
