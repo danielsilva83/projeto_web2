@@ -112,7 +112,7 @@ CREATE TABLE `users` (
   `first_name` varchar(255) NOT NULL,
   `last_name` varchar(255) NOT NULL,
   `role_id` int DEFAULT NULL,
-  `usuario_id` int DEFAULT NULL,
+  `professor_id` int DEFAULT NULL,
   `email` varchar(255) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -126,9 +126,9 @@ CREATE TABLE `users` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `IDX_97672ac88f789774dd47f7c8be` (`email`),
   KEY `FK_a2cecd1a3531c0b041e29ba46e1` (`role_id`),
-  KEY `FK_acc68e3258e35d7f67fcd0f5f50` (`usuario_id`),
+  KEY `FK_acc68e3258e35d7f67fcd0f5f50` (`professor_id`),
   CONSTRAINT `FK_a2cecd1a3531c0b041e29ba46e1` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`),
-  CONSTRAINT `FK_acc68e3258e35d7f67fcd0f5f50` FOREIGN KEY (`usuario_id`) REFERENCES `professors` (`id`)
+  CONSTRAINT `FK_acc68e3258e35d7f67fcd0f5f50` FOREIGN KEY (`professor_id`) REFERENCES `professors` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 

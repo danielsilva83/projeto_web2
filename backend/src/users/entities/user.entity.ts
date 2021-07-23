@@ -69,7 +69,7 @@ export class User {
   roleEager: Role;
 
   @ManyToOne(() => Professor, (professors) => professors.users, { eager: true })
-  @JoinColumn({ name: 'usuario_id', referencedColumnName: 'id' })
+  @JoinColumn({ name: 'professor_id', referencedColumnName: 'id' })
   professorEager: Professor;
 
 
