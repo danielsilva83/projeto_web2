@@ -6,31 +6,28 @@ import {
   Logo,
   Text,
   BoxText,
-
-} from './fracoes-styles';
+} from './fractions-styles';
 import Markdown from '../../components/markdown/markdown';
 
 import conteudo from '../../assets/texto-conteudo.md';
 
-const Sobre: React.FC = () => {
+const Fractions: React.FC = () => {
   return (
     <Container>
-    <LeftSquare>
+      <LeftSquare>
         <div>
-        <Logo/></div>
-        
-    </LeftSquare>
+          <Logo />
+        </div>
+      </LeftSquare>
 
       <RightSquare>
-      <div>
-        <Text>
-          <Markdown path = {conteudo}/>
-      </Text>
-      </div>
-
-
+        <div>
+          <Text>
+            <Markdown path={conteudo} />
+          </Text>
+        </div>
       </RightSquare>
     </Container>
   );
 };
-export default Sobre;
+export default Fractions;

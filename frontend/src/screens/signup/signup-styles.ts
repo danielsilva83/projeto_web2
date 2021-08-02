@@ -21,15 +21,32 @@ export const PurpleSquare = styled.div`
   width: 100%;
   height: 100vh;
   right: 0px;
-  
+
   align-items: center;
   justify-content: flex-start;
   @media (max-width: 800px) {
     width: 100%;
+    height: 70vh;
   }
 `;
 
+export const WhiteSquare = styled.div`
+  display: flex;
+  background-color: white;
+  width: 60vw;
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 
+  @media (max-width: 800px) {
+    width: 100%;
+    height: 30vh;
+
+    justify-content: center;
+    align-items: center;
+  }
+`;
 
 interface LogoProps {
   size?: string;
@@ -75,4 +92,33 @@ export const ButtonSignup = styled.button<ButtonSignupProps>`
   font-size: 22px;
 
   margin-bottom: ${props => (props.marginBottom ? props.marginBottom : '0px')};
+`;
+
+interface ImagemProps {
+  height?: string;
+  width?: string;
+  marginLeft?: string;
+  marginRight?: string;
+  hideImageOn800px?: boolean;
+}
+export const Imagem = styled.img<ImagemProps>`
+  width: ${props => (props.height ? props.height : '50px')};
+  height: ${props => (props.width ? props.width : '50px')};
+  margin-left: ${props => (props.marginLeft ? props.marginLeft : '0px')};
+  margin-right: ${props => (props.marginRight ? props.marginRight : '0px')};
+
+  @media (max-width: 800px) {
+    height: ${props => (props.hideImageOn800px ? '0px' : null)};
+    width: ${props => (props.hideImageOn800px ? '0px' : null)};
+  }
+`;
+
+export const Title = styled.h3`
+  font-size: 50px;
+  color: #620184;
+  text-align: center;
+
+  @media (max-width: 800px) {
+    font-size: 30px;
+  }
 `;
