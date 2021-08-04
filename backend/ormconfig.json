@@ -1,6 +1,6 @@
 {
    "type": "mysql",  
-   "url": "mysql://root:33225441Ph$@localhost:3306/temrazao",
+   "url": "mysql://root:30195dgs@localhost:3306/temrazao",
    "synchronize": true,
    "logging": false,
    "entities": [
