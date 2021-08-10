@@ -1,12 +1,19 @@
 projeto_web2 - Aplicativo Tem Razão - aplicação para reforçar exercicios de fração
+
 Instrução para desenvolvedores:
+
 back-end:
+
 criar arquivo .env dentro da pasta backend.
+
 PORT=4000
+
 TEMRAZAO_FRONT_URL=http://localhost:3000
+
 MAIL_TRANSPORT=smtps://email@provedor.com.br:senhaemail@smtp.gmail.com:465 (serviodr e porta smtp - exempo do smtp para conta google)
 
 requisitos: Instalção do NodeJs e Mysql.
+
 obs: O arquivo de dump do banco de dados encontra-se na pasta \backend\dump_banco
 
 instalação $ yarn install
