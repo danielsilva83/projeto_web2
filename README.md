@@ -16,6 +16,10 @@ requisitos: Instalção do NodeJs e Mysql.
 
 obs: O arquivo de dump do banco de dados encontra-se na pasta \backend\dump_banco
 
+atualizar a linha de conexão com o banco no arquivo ormconfig.json dentro de \backend\ 
+
+ "url": "mysql://usuario:senha@localhost:3306/temrazao"
+
 instalação $ yarn install
 
 Running the app
