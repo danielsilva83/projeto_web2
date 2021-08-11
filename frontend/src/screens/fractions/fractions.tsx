@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { MainHeader } from '../../components';
 import {
   Container,
   LeftSquare,
@@ -21,6 +22,7 @@ const Fractions: React.FC = () => {
       </LeftSquare>
 
       <RightSquare>
+      <MainHeader/>
         <div>
           <Text>
             <Markdown path={conteudo} />

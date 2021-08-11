@@ -11,7 +11,7 @@ const MainHeader: React.FC = () => {
       <HeaderButton onClick={() => history.push('/fractions')}>
         Frações
       </HeaderButton>
-      <HeaderButton>Contato</HeaderButton>
+      <HeaderButton onClick={() => history.push('/contact')}>Contato</HeaderButton>
       <HeaderButton>Tecnologias</HeaderButton>
       <HeaderButton onClick={() => history.push('/about')}>Sobre</HeaderButton>
     </Container>
