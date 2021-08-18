@@ -1,5 +1,5 @@
 import React from 'react';
-import { Signup, Login, About, Fractions } from '../screens/';
+import { Signup, Login, About, Fractions, Contact, Forget } from '../screens/';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const Routes: React.FC = () => {
@@ -9,6 +9,8 @@ const Routes: React.FC = () => {
       <Route exact path="/signup" component={Signup} />
       <Route exact path="/about" component={About} />
       <Route exact path="/Fractions" component={Fractions} />
+      <Route exact path="/contact" component={Contact} />
+      <Route exact path="/forget" component={Forget} />
     </Router>
   );
 };

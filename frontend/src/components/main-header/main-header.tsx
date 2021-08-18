@@ -8,11 +8,11 @@ const MainHeader: React.FC = () => {
   return (
     <Container>
       <Imagem src={LegoImage} marginLeft="20px" />
+      <HeaderButton onClick={() => history.push('/')}>Login</HeaderButton>
       <HeaderButton onClick={() => history.push('/fractions')}>
         Frações
       </HeaderButton>
-      <HeaderButton>Contato</HeaderButton>
-      <HeaderButton>Tecnologias</HeaderButton>
+      <HeaderButton onClick={() => history.push('/contact')}>Contato</HeaderButton>
       <HeaderButton onClick={() => history.push('/about')}>Sobre</HeaderButton>
     </Container>
   );
