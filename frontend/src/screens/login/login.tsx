@@ -78,16 +78,16 @@ const Login: React.FC = () => {
           <Icon.FaLock color="#B0B0B0" size={25} />
         </TextInput>
 
-        <MainButton onClick={() => handleClickButtonLogin()} title="Signin" />
+        <MainButton onClick={() => handleClickButtonLogin()} title="Entrar" />
 
         <BoxText>
-          <Text>Don't have an account?</Text>
+          <Text>Não tem uma conta?</Text>
           <ButtonSignup onClick={() => history.push('/signup')}>
-            SignUp
+            Registrar
           </ButtonSignup>
         </BoxText>
 
-        <ButtonSignup marginBottom="80px">Forgot password</ButtonSignup>
+        <ButtonSignup marginBottom="80px" onClick={() => history.push('/forget')}>Esqueci minha senha</ButtonSignup>
         <ToastContainer />
       </PurpleSquare>
     </Container>

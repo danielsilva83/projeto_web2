@@ -5,7 +5,7 @@
    "username": "root",
    "password": "987654321asd",
    "database": "temrazao",
-   "synchronize": true,
+   "synchronize": false,
    "logging": false,
    "entities": [
       "dist/**/*.entity{.ts,.js}"
