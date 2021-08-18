@@ -34,11 +34,11 @@ const Login: React.FC = () => {
         })
         .then(response => {
           console.log(response.data);
-          toast.success('Usuário cadastrado com sucesso!');
+          toast.success('Login com sucesso!');
         });
     } catch (error) {
       console.log(error);
-      toast.error('Erro ao cadastrar usuário!');
+      toast.error('Erro no login!');
     }
   };
 

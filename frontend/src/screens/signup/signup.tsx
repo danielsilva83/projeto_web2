@@ -89,7 +89,7 @@ const Signup: React.FC = () => {
           SetprofessorName(text.target.value)
         }
         type="text"
-        placeholder="Apelido"
+        placeholder="Nome do Professor"
         >
           <Icon.FaUser color="#B0B0B0" size={25} />
         </TextInput>
