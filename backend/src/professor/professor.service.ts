@@ -29,7 +29,7 @@ export class ProfessorService {
     );
 
     if (!requiredClients.length)
-      throw new NotFoundException('Nenhum cliente encontrado!');
+      throw new NotFoundException('Nenhum professor encontrado!');
 
     const sanitized = requiredClients.filter((requiredClient) =>
       abilities.can('read', requiredClient),

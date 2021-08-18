@@ -830,7 +830,15 @@
     "@nestjsx/util" "^4.6.2"
     qs "^6.8.0"
 
-"@nestjsx/crud-typeorm@5.0.0-alpha.3":
+"@nestjsx/crud-request@^5.0.0-alpha.3":
+  version "5.0.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/@nestjsx/crud-request/-/crud-request-5.0.0-alpha.3.tgz#ee62f5ff454daef4973990faf9d1568e2a4b9bc8"
+  integrity sha512-EFeGgh/sSHhD3px9aj4hyjvOqBepMcRFAi5lrYuSUDmnj/eQOa4dg4orehU8gKrSAmgKNe9r0dx0kel7Zgivzg==
+  dependencies:
+    "@nestjsx/util" "^5.0.0-alpha.3"
+    qs "^6.8.0"
+
+"@nestjsx/crud-typeorm@^5.0.0-alpha.3":
   version "5.0.0-alpha.3"
   resolved "https://registry.yarnpkg.com/@nestjsx/crud-typeorm/-/crud-typeorm-5.0.0-alpha.3.tgz#069dedb5cc82fd4749082594b5f6952c160fcd51"
   integrity sha512-9FN4iBELmhhSoVJj8457kaNGFKhm7IA7zJbLJRGuIb0+12WwCOhY0/bhMg1pWgZ1qUYtkYoELyMiMDroPPtARw==

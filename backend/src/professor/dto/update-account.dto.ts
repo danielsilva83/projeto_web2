@@ -11,11 +11,4 @@ export class UpdateAccountDto {
   @IsOptional()
   professorName: string;
 
-  @ApiPropertyOptional({ maxLength: 11, minLength: 11 })
-  @IsOptional()
-  @IsString()
-  @Length(11, 11, {
-    message: 'O documento deve ser do tipo CPF e ter no máximo 11 digitos.',
-  })
-  personInChargeDocument: string;
 }

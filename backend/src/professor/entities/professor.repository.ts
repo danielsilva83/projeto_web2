@@ -12,14 +12,14 @@ import { Professor } from './professor.entity';
 @EntityRepository(Professor)
 export class ProfessorRepository extends Repository<Professor> {
   async createAndSave(data: RegisterAccountDto): Promise<Professor> {
-    const clientEntity = this.create(data);
+    const professorEntity = this.create(data);
 
     try {
-      return await this.save(clientEntity);
+      return await this.save(professorEntity);
     } catch (err) {
       if (err.code === 1062) {
         throw new ConflictException(
-          'Já existe um cliente com este CNPJ em nosso banco de dados.',
+          'Já existe um professor com este nome em nosso banco de dados.',
         );
       }
 

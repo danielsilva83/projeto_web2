@@ -6,6 +6,7 @@ import { PermissionsModule } from './permissions/permissions.module';
 import { Connection, getConnectionOptions } from 'typeorm';
 import { ConfigModule } from '@nestjs/config';
 import { AuthModule } from './auth/auth.module';
+import { TurmasModule } from './turmas/turmas.module';
 
 @Module({
   imports: [
@@ -22,6 +23,7 @@ import { AuthModule } from './auth/auth.module';
     UsersModule,
     ProfessorModule,
     PermissionsModule,
+    TurmasModule,
   ],
 })
 export class AppModule implements NestModule {
