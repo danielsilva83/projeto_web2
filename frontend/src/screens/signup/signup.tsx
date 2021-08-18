@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import Lego from '../../components/lego/lego';
 import { TextInput, MainButton, MainHeader } from '../../components';
 import Personagens from '../../assets/personagens.png';
+import { ToastContainer, toast } from 'react-toastify';
+import api from '../../services/api';
+import { useHistory } from 'react-router-dom';
 import {
   Container,
   PurpleSquare,
@@ -17,11 +20,34 @@ import * as Icon from 'react-icons/fa';
 import { send } from 'emailjs-com';
 
 const Signup: React.FC = () => {
-  const [toSend, setToSend] = useState({
-    from_name: '',
-    message: '',
-    reply_to: '',
-  });
+  const history = useHistory();
+  const [fisrtName, SetfisrtName] = useState('');
+  const [lastName, SetlastName] = useState('');
+  const [professorName, SetprofessorName] = useState('');
+  const [email, Setemail] = useState('');
+  const [password, SetPassword] = useState('');
+
+  const handleClickButtonLogin = async () => {
+    try {
+      await api
+        .post('/professor/register', {
+          fisrtName: fisrtName,
+          lastName: lastName,
+          professorName: professorName,
+          email: email,
+          password: password,
+        })
+        .then(response => {
+          history.push('/');
+          console.log(response.data); 
+          toast.success('Usuário cadastrado com sucesso!');
+        });
+    } catch (error) {
+      console.log(error);
+      toast.error('Erro ao cadastrar usuário!');
+    }
+  };
+
   return (
     <Container>
       <WhiteSquare>
@@ -39,54 +65,56 @@ const Signup: React.FC = () => {
         <Logo />
 
         <TextInput
-          onChange={(text: { target: { value: string } }) => {
-            setToSend({ ...toSend, reply_to: text.target.value });
-          }}
-          type="text"
-          placeholder="Email"
-        >
-          <Icon.FaEnvelope color="#B0B0B0" size={25} />
-        </TextInput>
-
-        <TextInput
-          onChange={(text: { target: { value: string } }) => {
-            setToSend({ ...toSend, from_name: text.target.value });
-          }}
-          type="text"
-          placeholder="Nome"
+          onChange={(text: { target: { value: string } }) =>
+          SetfisrtName(text.target.value)
+        }
+        type="text"
+        placeholder="Primeiro Nome"
         >
           <Icon.FaUser color="#B0B0B0" size={25} />
         </TextInput>
 
         <TextInput
-          onChange={(text: { target: { value: string } }) => {
-            setToSend({ ...toSend, message: text.target.value });
-          }}
-          type="text"
-          placeholder="Mensagem"
+          onChange={(text: { target: { value: string } }) =>
+          SetlastName(text.target.value)
+        }
+        type="text"
+        placeholder="Sobrenome"
         >
-          <Icon.FaComment color="#B0B0B0" size={25} />
+          <Icon.FaUser color="#B0B0B0" size={25} />
         </TextInput>
 
-        <MainButton
-          onClick={() => {
-            send(
-              'service_eez79mk',
-              'template_fuap9rd',
-              toSend,
-              'user_i8GeHAJr5gbRtyMVKIwcJ',
-            )
-              .then(response => {
-                console.log('SUCCESS!', response.status, response.text);
-              })
-              .catch(err => {
-                console.log('FAILED...', err);
-              });
-          }}
-          title="Enviar"
+        <TextInput
+          onChange={(text: { target: { value: string } }) =>
+          SetprofessorName(text.target.value)
+        }
+        type="text"
+        placeholder="Apelido"
         >
-          Enviar
-        </MainButton>
+          <Icon.FaUser color="#B0B0B0" size={25} />
+        </TextInput>
+
+        <TextInput
+          onChange={(text: { target: { value: string } }) =>
+          Setemail(text.target.value)
+        }
+        type="text"
+        placeholder="Email"
+        >
+          <Icon.FaEnvelope color="#B0B0B0" size={25}/>
+        </TextInput>
+
+        <TextInput
+          onChange={(text: { target: { value: string } }) =>
+            SetPassword(text.target.value)
+          }
+          type="password"
+          placeholder="Password"
+        >
+          <Icon.FaLock color="#B0B0B0" size={25} />
+        </TextInput>
+
+        <MainButton onClick={() => handleClickButtonLogin()} title="Registrar" />
       </PurpleSquare>
     </Container>
   );
