@@ -87,7 +87,7 @@ const Login: React.FC = () => {
           </ButtonSignup>
         </BoxText>
 
-        <ButtonSignup marginBottom="80px">Esqueci minha senha</ButtonSignup>
+        <ButtonSignup marginBottom="80px" onClick={() => history.push('/forget')}>Esqueci minha senha</ButtonSignup>
         <ToastContainer />
       </PurpleSquare>
     </Container>
